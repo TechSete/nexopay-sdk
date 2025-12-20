@@ -1,6 +1,7 @@
 package tech.techsete.nexopay_sdk.dtos.requests;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.JsonNode;
 import lombok.Builder;
 import lombok.Data;
 import tech.techsete.nexopay_sdk.enums.WebhookEventType;
@@ -15,5 +16,5 @@ public class WebhookEventRequest implements Serializable {
     private WebhookEventType type;
 
     @JsonProperty("payload")
-    private Object payload;
+    private JsonNode payload;
 }

@@ -9,7 +9,7 @@ import tech.techsete.nexopay_sdk.enums.ChargeType;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.List;
+import java.util.Collection;
 
 @Data
 @Builder
@@ -28,7 +28,7 @@ public class ChargeRequest implements Serializable {
 
     @Valid
     @JsonProperty("splitRules")
-    private List<SplitRuleRequest> splitRules;
+    private Collection<SplitRuleRequest> splitRules;
 
     @Valid
     @JsonProperty("webhook")

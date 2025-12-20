@@ -9,7 +9,7 @@ import tech.techsete.nexopay_sdk.enums.ChargeType;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
-import java.util.List;
+import java.util.Collection;
 
 @Data
 @Builder
@@ -17,6 +17,9 @@ public class ChargeResponse implements Serializable {
 
     @JsonProperty("id")
     private String id;
+
+    @JsonProperty("createdDate")
+    private OffsetDateTime createdDate;
 
     @JsonProperty("status")
     private ChargeStatus status;
@@ -40,7 +43,7 @@ public class ChargeResponse implements Serializable {
     private PayerResponse payer;
 
     @JsonProperty("splitRules")
-    private List<SplitRuleResponse> splitRules;
+    private Collection<SplitRuleResponse> splitRules;
 
     @JsonProperty("webhook")
     private WebhookResponse webhook;
