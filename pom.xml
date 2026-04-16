@@ -11,7 +11,7 @@
 
 	<groupId>tech.techsete</groupId>
 	<artifactId>nexopay-sdk</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>NexoPay SDK</name>
 	<description>Biblioteca SDK para integrações de pagamentos com o NexoPay</description>
 	<url>https://github.com/TechSete/nexopay-sdk</url>

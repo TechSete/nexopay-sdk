@@ -11,5 +11,6 @@ public enum ChargeStatus {
     REFUSED,
     CHARGEBACK,
     DISPUTE,
-    BLOCKED
+    BLOCKED,
+    EXPIRED
 }
