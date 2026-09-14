@@ -1,8 +1,10 @@
 package tech.techsete.nexopay_sdk.dtos.responses;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import tech.techsete.nexopay_sdk.enums.PixKeyType;
 import tech.techsete.nexopay_sdk.enums.WithdrawMethod;
 import tech.techsete.nexopay_sdk.enums.WithdrawStatus;
@@ -13,6 +15,8 @@ import java.time.OffsetDateTime;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class WithdrawResponse implements Serializable {
 
     @JsonProperty("id")

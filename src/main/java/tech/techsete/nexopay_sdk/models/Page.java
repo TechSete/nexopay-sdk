@@ -1,8 +1,10 @@
 package tech.techsete.nexopay_sdk.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.List;
@@ -20,6 +22,8 @@ import java.util.List;
  */
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Page<T> implements Serializable {
 
     /**
@@ -39,6 +43,8 @@ public class Page<T> implements Serializable {
      */
     @Data
     @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
     public static class PageMetadata implements Serializable {
 
         /**

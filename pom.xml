@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.0.0</version>
+		<version>4.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<groupId>tech.techsete</groupId>
 	<artifactId>nexopay-sdk</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<name>NexoPay SDK</name>
 	<description>Biblioteca SDK para integrações de pagamentos com o NexoPay</description>
 	<url>https://github.com/TechSete/nexopay-sdk</url>
@@ -70,7 +70,7 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
+			<groupId>tools.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
 	</dependencies>
@@ -132,7 +132,7 @@
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>
-						<phase>verify</phase>
+						<phase>deploy</phase>
 						<goals><goal>sign</goal></goals>
 						<configuration>
 							<keyname>${gpg.keyname}</keyname>

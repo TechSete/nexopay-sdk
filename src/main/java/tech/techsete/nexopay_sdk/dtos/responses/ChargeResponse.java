@@ -1,8 +1,10 @@
 package tech.techsete.nexopay_sdk.dtos.responses;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import tech.techsete.nexopay_sdk.enums.ChargeStatus;
 import tech.techsete.nexopay_sdk.enums.ChargeType;
 
@@ -13,6 +15,8 @@ import java.util.Collection;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ChargeResponse implements Serializable {
 
     @JsonProperty("id")

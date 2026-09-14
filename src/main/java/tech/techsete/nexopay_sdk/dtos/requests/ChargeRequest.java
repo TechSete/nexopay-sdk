@@ -3,8 +3,10 @@ package tech.techsete.nexopay_sdk.dtos.requests;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import tech.techsete.nexopay_sdk.enums.ChargeType;
 
 import java.io.Serializable;
@@ -13,6 +15,8 @@ import java.util.Collection;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ChargeRequest implements Serializable {
 
     @NotNull(message = "Amount cannot be null")
