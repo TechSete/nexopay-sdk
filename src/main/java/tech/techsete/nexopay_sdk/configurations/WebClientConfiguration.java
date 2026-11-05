@@ -39,7 +39,7 @@ public class WebClientConfiguration {
      * interagir com a API da NexoPay. A configuração inclui:
      * </p>
      * <ul>
-     *   <li>URL base da API: https://api.nexopaybr.com</li>
+     *   <li>URL base da API: https://api.nexopaybr.com.br</li>
      *   <li>Cabeçalho padrão Accept: application/json</li>
      *   <li>Cabeçalho padrão Content-Type: application/json</li>
      *   <li>Filtro global para interceptar respostas HTTP</li>
@@ -66,7 +66,7 @@ public class WebClientConfiguration {
     public WebClient nexoPayWebClient() {
 
         return WebClient.builder()
-                .baseUrl("https://api.nexopaybr.com")
+                .baseUrl("https://api.nexopaybr.com.br")
                 .defaultHeader("Accept", "application/json")
                 .defaultHeader("Content-Type", "application/json")
                 .filter(WebClientFilter.addHeadersFromAttribute())
